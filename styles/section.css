@@ -1,0 +1,18 @@
+.section {
+  padding: 9rem 0;
+}
+
+.section > h1,
+.section > p {
+  margin-inline: auto;
+  width: 50%;
+  text-align: center;
+}
+
+.section > h1 {
+  margin-bottom: 0.5rem;
+}
+
+.section:nth-child(odd) {
+  background-color: var(--color-gray-200);
+}
