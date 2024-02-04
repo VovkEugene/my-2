@@ -1,0 +1,27 @@
+.button {
+  width: fit-content;
+  padding: 1rem 2.5rem;
+  display: inline-block;
+  border-radius: var(--border-radius-3);
+  font-weight: 500;
+  background-color: var(--color-gray-200);
+  color: var(--color-gray-900);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.button:hover {
+  background-color: var(--color-gray-900);
+  color: var(--color-gray-100);
+}
+
+.button.small {
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius-4);
+  font-weight: 400;
+}
+
+.button.primary {
+  background-color: var(--color-primary);
+  color: #fff;
+}
