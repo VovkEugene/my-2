@@ -1,0 +1,70 @@
+.about__container {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 7rem;
+}
+
+.about__image {
+  height: fit-content;
+  max-height: 35rem;
+  overflow: hidden;
+  border: 1rem solid var(--color-gray-100);
+}
+
+.about__cards {
+  margin: 3rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.about__card {
+  padding: 1rem;
+  border-radius: var(--border-radius-2);
+  text-align: center;
+  background-color: var(--color-gray-100);
+  transition: var(--transition);
+  cursor: default;
+}
+
+.about__card:hover {
+  transform: translateY(-0.5rem);
+  background-color: var(--color-primary);
+  color: var(--color-gray-100);
+}
+
+.about__card i {
+  padding: 0.5rem;
+  display: inline-block;
+  border-radius: var(--border-radius-4);
+  font-size: 1.4rem;
+  color: var(--color-primary);
+}
+
+.about__card:hover i {
+  background-color: var(--color-gray-100);
+  color: var(--color-primary);
+}
+
+.about__card h4 {
+  margin: 1rem 0 0.8rem;
+}
+
+.about__card small {
+  font-size: 0.7rem;
+}
+
+.about__details p {
+  margin-bottom: 0.8rem;
+}
+
+.about__details .button {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.about__details .button i {
+  font-size: 1.2rem;
+}
