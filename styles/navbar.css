@@ -1,0 +1,51 @@
+nav {
+  position: fixed;
+  width: 100vw;
+  height: 3.8rem;
+  top: 0;
+  left: 0;
+  display: grid;
+  place-items: center;
+  border-bottom: 1px solid var(--color-gray-300);
+  background-color: var(--color-nav-background);
+  backdrop-filter: blur(15px);
+  -o-backdrop-filter: blur(15px);
+  -moz-backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  -ms-backdrop-filter: blur(15px);
+  z-index: 10;
+}
+
+.nav__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__logo {
+  width: 2.4rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.nav__menu {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.nav__menu a {
+  color: var(--color-gray-900);
+}
+
+.nav__toggle_open,
+.nav__toggle_close {
+  display: none;
+}
+
+.nav__theme-button {
+  font-size: 1.4rem;
+  background-color: transparent;
+  color: var(--color-gray-900);
+  cursor: pointer;
+}
