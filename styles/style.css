@@ -2,6 +2,7 @@
 @import url("./buttons.css");
 @import url("./section.css");
 @import url("./navbar.css");
+@import url("./header.css");
 
 * {
   margin: 0;
