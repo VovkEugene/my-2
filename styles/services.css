@@ -27,7 +27,7 @@
 }
 
 .services__left li span {
-  padding: 1rem;
+  padding: 0.6rem 1rem;
   border-radius: 50%;
   font-size: 1.3rem;
   background-color: var(--color-primary);
