@@ -76,7 +76,7 @@ function closeNavHandler() {
   navOpenButtonNode.style.display = "inline-block";
 }
 
-// close nav-menu on clock of nav-link on small screens
+//----------close nav-menu on clock of nav-link on small screens-----------
 const navItems = navMenuNode.querySelectorAll("a");
 
 if (window.innerWidth < 768) {
@@ -84,3 +84,21 @@ if (window.innerWidth < 768) {
     item.addEventListener("click", closeNavHandler);
   });
 }
+
+//-------------------------------Navbar Toggle/Burger---------------------
+const themeButton = document.querySelector(".nav__theme-button");
+
+themeButton.addEventListener("click", () => {
+  let bodyClass = document.body.className;
+
+  if (!bodyClass) {
+    bodyClass = "dark";
+    document.body.className = bodyClass;
+    //change toggle icon
+    themeButton.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
+  } else {
+    bodyClass = "";
+    document.body.className = bodyClass;
+    themeButton.innerHTML = '<i class="fa-regular fa-moon"></i>';
+  }
+});
