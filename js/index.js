@@ -31,7 +31,7 @@ function removeActiveClass() {
   });
 }
 
-//-------------------------------MixItUp--------------------------------
+//-------------------------------MixItUp (project section)---------------
 const containerEl = document.querySelector(".projects__container");
 
 var mixer = mixitup(containerEl, {
@@ -41,3 +41,17 @@ var mixer = mixitup(containerEl, {
 });
 
 mixer.filter("*");
+
+//-------------------------------Swiper (testimonials section)-----------
+const swiper = new Swiper(".swiper", {
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    600: { slidesPerView: 2 },
+    1024: { slidesPerView: 3 },
+  },
+});
