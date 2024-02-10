@@ -55,3 +55,23 @@ const swiper = new Swiper(".swiper", {
     1024: { slidesPerView: 3 },
   },
 });
+
+//-------------------------------Navbar Toggle/Burger---------------------
+const navMenuNode = document.querySelector(".nav__menu");
+const navOpenButtonNode = document.querySelector(".nav__toggle_open");
+const navCloseButtonNode = document.querySelector(".nav__toggle_close");
+
+navOpenButtonNode.addEventListener("click", openNavHandler);
+navCloseButtonNode.addEventListener("click", closeNavHandler);
+
+function openNavHandler() {
+  navMenuNode.style.display = "flex";
+  navOpenButtonNode.style.display = "none";
+  navCloseButtonNode.style.display = "inline-block";
+}
+
+function closeNavHandler() {
+  navMenuNode.style.display = "none";
+  navCloseButtonNode.style.display = "none";
+  navOpenButtonNode.style.display = "inline-block";
+}
