@@ -578,7 +578,7 @@
     </section>
     <section class="contact section" id="contact">
       <div class="container contact__container">
-        <ul>
+        <ul class="contact__list">
           <li>
             <a
               href="mailto:evgeniyvovk2009@yandex.ru"
@@ -616,10 +616,14 @@
             </a>
           </li>
         </ul>
-        <form action="">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-          <textarea rows="7" placeholder="Message"></textarea>
+        <form
+          action="https://formsubmit.co/4d0f4bda21c94808c32b020d0d2261d1"
+          method="POST"
+          class="contact__form"
+        >
+          <input type="text" name="Name" placeholder="Full Name" />
+          <input type="email" name="Email" placeholder="Email Address" />
+          <textarea rows="7" name="Message" placeholder="Message"></textarea>
           <button type="submit" class="button">Send</button>
         </form>
       </div>
