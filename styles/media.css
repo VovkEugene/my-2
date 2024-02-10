@@ -1,0 +1,73 @@
+@media (max-width: 768px) {
+  section h1 {
+    font-size: 1.8rem;
+  }
+
+  p,
+  a,
+  figcaption {
+    font-size: 1rem;
+  }
+
+  .container {
+    width: var(--container-width-small);
+  }
+
+  section {
+    padding: 7rem 0;
+  }
+
+  section > h1,
+  section > p {
+    width: var(--container-width-small);
+  }
+
+  .nav__menu {
+    position: fixed;
+    width: fit-content;
+    top: 3.8rem;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    display: none;
+  }
+
+  .nav__menu li {
+    width: 100%;
+  }
+
+  .nav__menu li a {
+    width: 100%;
+    padding: 1rem 4rem;
+    display: block;
+    border-top: 1px solid var(--color-gray-300);
+    text-align: center;
+    box-shadow: -2rem 5rem 5rem rgba(0, 0, 0, 0.1);
+    background-color: var(--color-gray-200);
+  }
+
+  .nav__toggle_open,
+  .nav__toggle_close {
+    display: inline-block;
+    font-size: 1.8rem;
+    background-color: transparent;
+    color: var(--color-gray-900);
+  }
+
+  .nav__toggle_close {
+    display: none;
+    font-size: 2rem;
+  }
+
+  .nav__buttons {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+  }
+
+  header,
+  section,
+  footer {
+    display: none;
+  }
+}
