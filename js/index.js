@@ -96,9 +96,19 @@ themeButton.addEventListener("click", () => {
     document.body.className = bodyClass;
     //change toggle icon
     themeButton.innerHTML = '<i class="fa-solid fa-lightbulb"></i>';
+    //save theme to local storage
+    window.localStorage.setItem("theme", bodyClass);
   } else {
     bodyClass = "";
     document.body.className = bodyClass;
+    //change toggle icon
     themeButton.innerHTML = '<i class="fa-regular fa-moon"></i>';
+    //save theme to local storage
+    window.localStorage.setItem("theme", bodyClass);
   }
+});
+
+//load theme on load
+window.addEventListener("load", () => {
+  document.body.className = window.localStorage.getItem("theme");
 });
