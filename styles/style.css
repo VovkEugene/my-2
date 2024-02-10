@@ -5,6 +5,7 @@
 @import url("./header.css");
 @import url("./about.css");
 @import url("./services.css");
+@import url("./projects.css");
 
 * {
   margin: 0;
