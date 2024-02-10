@@ -75,3 +75,12 @@ function closeNavHandler() {
   navCloseButtonNode.style.display = "none";
   navOpenButtonNode.style.display = "inline-block";
 }
+
+// close nav-menu on clock of nav-link on small screens
+const navItems = navMenuNode.querySelectorAll("a");
+
+if (window.innerWidth < 768) {
+  navItems.forEach((item) => {
+    item.addEventListener("click", closeNavHandler);
+  });
+}
