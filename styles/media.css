@@ -30,6 +30,7 @@
     flex-direction: column;
     gap: 0;
     display: none;
+    perspective: 250px;
   }
 
   .nav__menu li {
@@ -65,9 +66,36 @@
     gap: 2.5rem;
   }
 
-  header,
+  .nav__menu li {
+    transform: rotateX(90deg);
+    transform-origin: top;
+    opacity: 0;
+    animation: navKey 0.5s ease-in-out forwards;
+  }
+
+  .nav__menu li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .nav__menu li:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .nav__menu li:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .nav__menu li:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+
+  @keyframes navKey {
+    to {
+      transform: rotateX(0deg);
+      opacity: 1;
+    }
+  }
+
+  /* header,
   section,
   footer {
     display: none;
-  }
+  } */
 }
