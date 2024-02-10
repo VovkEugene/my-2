@@ -34,6 +34,9 @@
   border-radius: var(--border-radius-2);
   background-color: var(--color-gray-100);
   transition: var(--transition);
+  /* mixitup animation */
+  opacity: 0;
+  animation: identifier 1.5s ease forwards;
 }
 
 .project:hover {
@@ -56,4 +59,10 @@
   margin-bottom: 1rem;
   display: flex;
   gap: 1rem;
+}
+
+@keyframes identifier {
+  to {
+    opacity: 1;
+  }
 }

@@ -210,13 +210,13 @@
         facilis, dolore accusantium.
       </p>
       <ul class="projects__categories">
-        <li class="active">All</li>
-        <li>Frontend</li>
-        <li>Backend</li>
-        <li>Fullstack</li>
+        <li class="active" data-filter="*">All</li>
+        <li data-filter=".frontend">Frontend</li>
+        <li data-filter=".backend">Backend</li>
+        <li data-filter=".fullstack">Fullstack</li>
       </ul>
       <div class="container projects__container">
-        <article class="project fullstack">
+        <article class="project mix fullstack" data-order="1">
           <div class="project__image">
             <img src="./assets/projects/project1.jpg" alt="Project Image One" />
           </div>
@@ -240,7 +240,7 @@
             </a>
           </div>
         </article>
-        <article class="project frontend">
+        <article class="project mix frontend" data-order="2">
           <div class="project__image">
             <img src="./assets/projects/project2.jpg" alt="Project Image Two" />
           </div>
@@ -264,7 +264,7 @@
             </a>
           </div>
         </article>
-        <article class="project backend">
+        <article class="project mix backend" data-order="3">
           <div class="project__image">
             <img
               src="./assets/projects/project3.jpg"
@@ -291,7 +291,7 @@
             </a>
           </div>
         </article>
-        <article class="project backend">
+        <article class="project mix backend" data-order="4">
           <div class="project__image">
             <img
               src="./assets/projects/project4.jpg"
@@ -318,7 +318,7 @@
             </a>
           </div>
         </article>
-        <article class="project fullstack">
+        <article class="project mix fullstack" data-order="5">
           <div class="project__image">
             <img
               src="./assets/projects/project5.jpg"
@@ -345,7 +345,7 @@
             </a>
           </div>
         </article>
-        <article class="project frontend">
+        <article class="project mix frontend" data-order="6">
           <div class="project__image">
             <img src="./assets/projects/project6.jpg" alt="Project Image Six" />
           </div>
@@ -369,7 +369,7 @@
             </a>
           </div>
         </article>
-        <article class="project backend">
+        <article class="project mix backend" data-order="7">
           <div class="project__image">
             <img
               src="./assets/projects/project7.jpg"
@@ -396,7 +396,7 @@
             </a>
           </div>
         </article>
-        <article class="project frontend">
+        <article class="project mix frontend" data-order="8">
           <div class="project__image">
             <img
               src="./assets/projects/project8.jpg"
@@ -423,7 +423,7 @@
             </a>
           </div>
         </article>
-        <article class="project fullstack">
+        <article class="project mix fullstack" data-order="9">
           <div class="project__image">
             <img
               src="./assets/projects/project9.jpg"
@@ -452,6 +452,7 @@
         </article>
       </div>
     </section>
+    <script src="./mix/dist/mixitup.min.js"></script>
     <script src="./js/data.js"></script>
     <script src="./js/index.js"></script>
   </body>

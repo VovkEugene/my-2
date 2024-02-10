@@ -31,3 +31,13 @@ function removeActiveClass() {
   });
 }
 
+//-------------------------------MixItUp--------------------------------
+const containerEl = document.querySelector(".projects__container");
+
+var mixer = mixitup(containerEl, {
+  animation: {
+    enable: false,
+  },
+});
+
+mixer.filter("*");
