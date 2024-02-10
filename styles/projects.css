@@ -18,7 +18,7 @@
 }
 
 .projects__categories li:hover,
-.projects__categories li.active {
+li.mixitup-control-active {
   background-color: var(--color-primary);
   color: var(--color-gray-100);
 }
