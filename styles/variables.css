@@ -10,9 +10,17 @@
 
   --transition: all 0.3s ease 0s;
 
+  /* --primary-hue: 138; */
+  /* --primary-hue: 185; */
+  /* --primary-hue: 222; */
+  /* --primary-hue: 280; */
   --primary-hue: 358;
+
+
   --color-primary: hsl(var(--primary-hue), 87%, 44%);
+
   --color-nav-background: hsla(var(--primary-hue), 0%, 100%, 0.4);
+
   --color-gray-100: hsl(var(--primary-hue), 0%, 100%); /* #fff;*/
   --color-gray-200: hsl(var(--primary-hue), 0%, 95%);
   --color-gray-300: hsl(var(--primary-hue), 0%, 85%);
