@@ -11,6 +11,7 @@
 @import url("./footer.css");
 @import url("./media.css");
 @import url("./dark-theme.css");
+@import url("./scrollbar.css");
 
 * {
   margin: 0;
