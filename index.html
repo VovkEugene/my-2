@@ -25,6 +25,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Portfolio</title>
   </head>
@@ -56,12 +57,12 @@
     </nav>
     <header>
       <div class="container header__container">
-        <article class="header__image">
+        <article class="header__image" data-aos="fade-up" data-aos-delay="700">
           <div>
             <img src="./assets/header/header.jpg" alt="Header image" />
           </div>
         </article>
-        <article class="header__content">
+        <article class="header__content" data-aos="fade-in">
           <h4>Hi, I'm <span>Eugene Vovk</span>. And I'll</h4>
           <h1>
             Get your business<br />
@@ -106,7 +107,7 @@
         <div class="about__image">
           <img src="./assets/about/about.jpg" alt="About image" />
         </div>
-        <div class="about__details">
+        <div class="about__details" data-aos="fade-in" data-aos-delay="300">
           <h1>About me</h1>
           <div class="about__cards">
             <article class="about__card">
@@ -179,7 +180,7 @@
             </div>
           </li>
         </ul>
-        <article class="services__right">
+        <article class="services__right" data-aos="fade-in" data-aos-delay="200">
           <!-- <h3>Frontend Development</h3>
           <p>
             Frontend ipsum dolor sit amet consectetur adipisicing elit. Rem ad
@@ -219,7 +220,7 @@
         <li data-filter=".backend">Backend</li>
         <li data-filter=".fullstack">Fullstack</li>
       </ul>
-      <div class="container projects__container">
+      <div class="container projects__container" data-aos="fade-in">
         <article class="project mix fullstack" data-order="1">
           <div class="project__image">
             <img src="./assets/projects/project1.jpg" alt="Project Image One" />
@@ -579,7 +580,7 @@
     <section class="contact section" id="contact">
       <div class="container contact__container">
         <ul class="contact__list">
-          <li>
+          <li data-aos="fade-in">
             <a
               href="mailto:evgeniyvovk2009@yandex.ru"
               class="contact__list-item"
@@ -588,7 +589,7 @@
               <i class="fa-regular fa-envelope"></i>
             </a>
           </li>
-          <li>
+          <li data-aos="fade-in" data-aos-delay="150">
             <a
               href="https://www.facebook.com/t/1234567891234567"
               class="contact__list-item"
@@ -597,7 +598,7 @@
               <i class="fa-brands fa-facebook-messenger"></i>
             </a>
           </li>
-          <li>
+          <li data-aos="fade-in" data-aos-delay="300">
             <a
               href="https://wa.me/+79854483814"
               class="contact__list-item"
@@ -606,7 +607,7 @@
               <i class="fa-brands fa-whatsapp"></i>
             </a>
           </li>
-          <li>
+          <li data-aos="fade-in" data-aos-delay="450">
             <a
               href="tel:+79854483814"
               class="contact__list-item"
@@ -620,6 +621,8 @@
           action="https://formsubmit.co/4d0f4bda21c94808c32b020d0d2261d1"
           method="POST"
           class="contact__form"
+          data-aos="fade-up"
+          data-aos-delay="600"
         >
           <input type="text" name="Name" placeholder="Full Name" />
           <input type="email" name="Email" placeholder="Email Address" />
@@ -666,6 +669,12 @@
     </footer>
     <script src="./mix/dist/mixitup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500, offset:80
+      });
+    </script>
     <script src="./js/data.js"></script>
     <script src="./js/index.js"></script>
   </body>
